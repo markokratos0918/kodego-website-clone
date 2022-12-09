@@ -1,14 +1,24 @@
 .header {
-    &__nav {
-        float: :right;
-        
-        & li {
-            display: inline-block;
-            margin-right: 1.5em;
-        }
-    }
+&__logo {
+  transform: scale(.65);
+}
 
-    &__user-links {
-        float: right;
+  &__nav {
+    float: right;
+    color: $mainBlue;
+
+    & li {
+      display: inline-block;
+      margin-right: 1.5em;
+      
     }
+  }
+
+  &__user-links {
+    float: right;
+
+    & > a:first-of-type {
+      margin-right: 1rem;
+    }
+     }
 }
