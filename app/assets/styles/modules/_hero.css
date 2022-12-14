@@ -8,30 +8,18 @@
 
 	&__container {
 		display: flex;
-		flex-direction: column;
-
-		@mixin atLaptopLarge {
-			flex-direction: row;
-		}
 	}
 
 	&__text-content {
-		width: 100%;
-		padding: 1rem 1rem 0 1rem;
+		margin-top: 3.125rem;
+		width: 50%;
+		padding: 3.125rem;
 		color: #fff;
-		text-align: center;
-		font-size: 1.1em;
-
-		@mixin atLaptopLarge {
-			margin-top: 3.125rem;
-			padding: 3.125rem;
-			text-align: left;
-			font-size: 1.2em;
-		}
+		font-size: 1.2em;
 	}
 
 	&__image-container {
-		width: 100%;
+		width: 50%;
 	}
 
 	&__image {
@@ -39,11 +27,7 @@
 	}
 
 	&__heading {
-		font-size: 1.75rem;
-
-		@mixin atLaptopLarge {
-			font-size: 2.625rem;
-		}
+		font-size: 2.625rem;
 	}
 
 	&__text {
