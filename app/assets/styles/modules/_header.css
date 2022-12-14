@@ -1,24 +1,47 @@
 .header {
-&__logo {
-  transform: scale(.65);
-}
+	color: $mainBlue;
 
-  &__nav {
-    float: right;
-    color: $mainBlue;
+	&__container {
+		@mixin atLaptopLarge {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
 
-    & li {
-      display: inline-block;
-      margin-right: 1.5em;
-      
-    }
-  }
+	&__mobile-nav-trigger {
+		@mixin atLaptop {
+			display: none;
+		}
+	}
 
-  &__user-links {
-    float: right;
+	&__logo {
+		@mixin atLaptopLarge {
+			transform: scale(0.7);
+		}
+	}
 
-    & > a:first-of-type {
-      margin-right: 1rem;
-    }
-     }
+	&__nav {
+		display: none;
+
+		@mixin atLaptopLarge {
+			display: flex;
+			justify-content: space-between;
+
+			& > ul {
+				display: flex;
+				align-items: center;
+
+				& > li {
+					margin-right: 1em;
+				}
+			}
+		}
+	}
+
+	&__user-links {
+		@mixin atLaptopLarge {
+			width: 14rem;
+		}
+	}
 }
